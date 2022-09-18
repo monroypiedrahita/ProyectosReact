@@ -1,26 +1,26 @@
-import React from 'react'
+import Tareas from "./Tareas";
+import "./Form.css";
 
-function ListaTareas() {
+function ListaTareas({ tareas }) {
   return (
-
-    <div>
-        <h2>Lista de Tareas</h2>
-        <div className='formulario d-flex flex-column'>
-            <label 
-                  className='mt-4'>Título:
-            </label>
-            <span className='w-75 mb-2'>Proeycto LiderApp</span>
-            <label 
-                  className='mt-4'>Fecha:
-            </label>
-            <span className='w-75 mb-2'>15 de agosto de 2022</span>
-            <label 
-                  className='mt-4'>Descripción:
-            </label>
-            <span className='w-75 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    <>
+      {tareas && tareas.length ? (
+        <div>
+          <div>
+            <h2>Lista de Tareas</h2>
+            <div className="Tareas">
+              <div className="interno">
+                {tareas.map((tarea) => {
+                  return <Tareas key={tarea.id} tarea={tarea} />;
+                })}
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-  )
+      ) : (
+        <h2>No hay tareas pendientes</h2>
+      )}
+    </>
+  );
 }
-
-export default ListaTareas
+export default ListaTareas;
