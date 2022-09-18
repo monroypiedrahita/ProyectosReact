@@ -22,8 +22,19 @@
     color: white;
 }
 
+.act{
+    border-radius: 5px;
+    background-color: #1505f2 ;
+    padding: 3px;
+    color: white;
+}
+
+.act:hover {
+    background-color: #885BA6 ;
+}
+
 .boton:hover {
-    background-color: #F28F16 ;
+    background-color: #885BA6 ;
 }
 
 input{

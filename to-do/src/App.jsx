@@ -8,6 +8,8 @@ import ListaTareas from './components/ListaTareas'
 function App() {
 
   const [tareas, setTareas] = useState([])
+  const [updateTarea, setUpdatetarea] = useState({})
+  
 
   return (
     <div>
@@ -18,11 +20,14 @@ function App() {
           <Formulario 
           tareas={tareas}
           setTareas={setTareas}
+          updateTarea ={updateTarea}
+          setUpdatetarea={setUpdatetarea}
           />
           </Col>
           <Col lg={6}>
           <ListaTareas
             tareas={tareas}
+            setUpdatetarea={setUpdatetarea}
           />
           </Col>
         </Row>

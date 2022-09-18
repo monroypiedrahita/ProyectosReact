@@ -1,9 +1,11 @@
 
 import Button from 'react-bootstrap/Button';
 
-function Tareas({tarea}) {
+function Tareas({tarea, setUpdatetarea}) {
 
   const {titulo, fecha, descripcion} = tarea
+
+
 
   return (
 
@@ -21,7 +23,10 @@ function Tareas({tarea}) {
       </label>
       <span className='w-75 mb-2'>{descripcion}</span>
       <div>
-      <Button variant="success">Editar</Button>{' '} 
+      <Button
+        onClick={()=> setUpdatetarea(tarea)}
+        variant="success"
+       >Editar</Button>{' '} 
       <Button variant="danger">Eliminar</Button>{' '}
       </div>
   </div>

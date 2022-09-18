@@ -1,7 +1,12 @@
 import Tareas from "./Tareas";
 import "./Form.css";
+import { useEffect } from "react";
 
-function ListaTareas({ tareas }) {
+function ListaTareas({ tareas, setUpdatetarea }) {
+
+
+
+
   return (
     <>
       {tareas && tareas.length ? (
@@ -11,7 +16,7 @@ function ListaTareas({ tareas }) {
             <div className="Tareas">
               <div className="interno">
                 {tareas.map((tarea) => {
-                  return <Tareas key={tarea.id} tarea={tarea} />;
+                  return <Tareas key={tarea.id} tarea={tarea} setUpdatetarea={setUpdatetarea}/>;
                 })}
               </div>
             </div>
