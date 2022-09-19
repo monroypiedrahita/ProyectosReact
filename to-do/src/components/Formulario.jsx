@@ -47,13 +47,15 @@ function Formulario({ tareas, setTareas, updateTarea, setUpdatetarea }) {
     };
 
     if (updateTarea.id) {
+      objetoTareas.id = updateTarea.id;
+    }
+
+    if (updateTarea.id) {
       const tareasActualizadas = tareas.map((tareaState) =>
         tareaState.id === updateTarea.id ? objetoTareas : tareaState
       );
       setTareas(tareasActualizadas);
       setUpdatetarea({});
-
-      
     } else {
       objetoTareas.id = generarId();
       setTareas([...tareas, objetoTareas]);
