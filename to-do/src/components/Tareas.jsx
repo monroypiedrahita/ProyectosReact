@@ -6,7 +6,7 @@ function Tareas({ tarea, setUpdatetarea, eliminarTarea }) {
   return (
     <div className="formulario d-flex flex-column mb-4">
       <label className="mt-4">TITULO:</label>
-      <span className="w-75 mb-2">{titulo} - {id}</span>
+      <span className="w-75 mb-2">{titulo}</span>
       <label className="mt-4">Fecha:</label>
       <span className="w-75 mb-2">{fecha}</span>
       <label className="mt-4">Descripción:</label>
