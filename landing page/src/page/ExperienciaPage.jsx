@@ -10,10 +10,17 @@ export const ExperienciaPage = () => {
         textAlign: "center",
         paddingBottom: 10,
         paddingTop: 5,
+        boxShadow: "-20px -10px 10px rgba(0, 0, 0, 0.5)",
         
       }}
       maxWidth="full"
     >
+            <Typography
+      sx={{
+        color: "primero.main",
+        fontSize: 60,
+        fontWeight: "bold",
+      }}>Experiencia Laboral</Typography>
       <Grid container>
       <Grid
             sx={{

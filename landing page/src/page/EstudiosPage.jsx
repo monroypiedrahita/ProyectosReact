@@ -10,9 +10,19 @@ export const EstudiosPage = () => {
         textAlign: "center",
         paddingBottom: 10,
         paddingTop: 5,
+        boxShadow: "-20px -10px 10px rgba(0, 0, 0, 0.5)",
+        
+        
       }}
       maxWidth="full"
     >
+      <Typography
+      sx={{
+        color: "tercero.main",
+        fontSize: 60,
+        fontWeight: "bold",
+      }}>Estudios</Typography>
+
       <Grid container>
         {/* COLUMNA 1 */}
         <Grid

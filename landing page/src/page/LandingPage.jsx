@@ -10,22 +10,22 @@ import { PortafolioPage } from "./PortafolioPage";
 export const LandingPage = () => {
   return (
     <Box>
-      <Box id="inicio">
+      <Box id="Inicio">
         <InicioPage />
       </Box>
-      <Box id="perfil">
+      <Box id="Perfil">
         <PerfilPage />
       </Box>
-      <Box id="estudios">
+      <Box id="Estudios">
         <EstudiosPage />
       </Box>
-      <Box id="experiencia">
+      <Box id="Experiencia">
         <ExperienciaPage />
       </Box>
-      <Box id="portafolio">
+      <Box id="Portafolio">
         <PortafolioPage />
       </Box>
-      <Box id="contacto">
+      <Box id="Contacto">
         <ContactoPage />
       </Box>
     </Box>

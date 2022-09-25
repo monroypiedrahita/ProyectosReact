@@ -1,5 +1,5 @@
-img{
-    height: 60px;
+.ImgLenguajes{
+    width: 45%;
     margin-top: 10px;
     margin-bottom: 10px;
     
@@ -30,3 +30,15 @@ img{
 
 }
 
+
+.imgPortafolio{
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.ImgPortafolio{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
