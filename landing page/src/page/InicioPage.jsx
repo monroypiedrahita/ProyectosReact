@@ -60,7 +60,7 @@ export const InicioPage = () => {
                 
                 }}
               >
-                Desarrollador
+                Desarrollador FrontEnd
               </Typography>
               <Grid
                 sx={{

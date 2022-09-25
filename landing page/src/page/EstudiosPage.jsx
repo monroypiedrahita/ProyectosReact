@@ -41,7 +41,7 @@ export const EstudiosPage = () => {
 
           <Grid item>
             <div>
-              <img
+            <img
                 className="logoEstudios"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png"
                 alt="SENA"
@@ -71,6 +71,19 @@ export const EstudiosPage = () => {
               <div>
                 <img
                   className="logoEstudios"
+                  src="https://i1.wp.com/colombia.marialuisa.foundation/wp-content/uploads/sites/19/2020/11/favicon-fimlm.png?fit=512%2C512&ssl=1"
+                  alt="FIMLM"
+                />
+              </div>
+              <div>
+                <h1 className="certificado">Diplomado en React</h1>
+                <h2 className="ano">2022</h2>
+              </div>
+            </Grid>
+            <Grid item>
+              <div>
+                <img
+                  className="logoEstudios"
                   src="https://static.platzi.com/static/images/footer/logo.png"
                   alt="SENA"
                 />
@@ -83,20 +96,6 @@ export const EstudiosPage = () => {
                 <h2 className="ano">EcmaScript</h2>
                 <h2 className="ano">CSS - HTML</h2>
                 <h2 className="ano">GitHub</h2>
-              </div>
-            </Grid>
-
-            <Grid item>
-              <div>
-                <img
-                  className="logoEstudios"
-                  src="https://i1.wp.com/colombia.marialuisa.foundation/wp-content/uploads/sites/19/2020/11/favicon-fimlm.png?fit=512%2C512&ssl=1"
-                  alt="FIMLM"
-                />
-              </div>
-              <div>
-                <h1 className="certificado">Diplomado en React</h1>
-                <h2 className="ano">2022</h2>
               </div>
             </Grid>
           </Grid>
