@@ -9,7 +9,7 @@ export const EstudiosPage = () => {
         borderRadius: 5,
         textAlign: "center",
         paddingBottom: 10,
-        paddingTop: 5,
+        paddingTop: 10,
         boxShadow: "-20px -10px 10px rgba(0, 0, 0, 0.5)",
         
         

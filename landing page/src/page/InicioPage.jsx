@@ -8,9 +8,8 @@ export const InicioPage = () => {
   return (
     <Container
       sx={{
-        paddingTop: 5,
+        paddingTop: 10,
         paddingBottom: 5,
-        
         background: "linear-gradient(to right bottom, #002333, #FFF)",
       }}
       maxWidth="full"
@@ -68,7 +67,9 @@ export const InicioPage = () => {
         <Grid item lg={6} xs={12}>
           <Grid sx={{ textAlign: "center" }} item lg={12}>
             <Grid item lg={12}>
-              <Grid container>
+              <Grid sx={{
+                mt: 10,
+              }} container>
                 <Typography
                   sx={{
                     color: "tercero.main",
@@ -80,24 +81,18 @@ export const InicioPage = () => {
                     marginTop: "10px",
                   }}
                 >
-                  Perfil Profesional
+                  Bienvenido a Landing Page
                 </Typography>
                 <Typography
                   sx={{
+                    
                     color: "primero.main",
-                    fontSize: 35,
+                    fontSize: 50,
                     paddingX: "20px",
                     paddingY: "20px",
                   }}
                 >
-                  Soy desarrollador web con Liderazgo, trabajo en equipo,
-                  solución de problemas en el siclo de desarrollo de software.
-                  Tengo experiencia solida en el uso de herramientas para
-                  programación en JavaScript, Python, HTML y Angular. También
-                  poseo fortalezas en el campo administrativo con experiencia en
-                  gestión administrativa, matemática, matemática económica,
-                  producción documental, servicio al cliente, organización de
-                  documentos administrativos, contabilidad y organización de
+                  Soy Desarrollador FrontEnd con buena actitud y comprometido con mi trabajo
                   eventos
                 </Typography>
               </Grid>

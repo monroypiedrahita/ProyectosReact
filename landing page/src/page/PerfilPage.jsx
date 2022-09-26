@@ -7,7 +7,7 @@ export const PerfilPage = () => {
   return (
     <Container
       sx={{
-        paddingTop: 5,
+        paddingTop: 10,
         paddingBottom: 5,
         borderRadius: 5,
         textAlign: "center",
@@ -45,32 +45,22 @@ export const PerfilPage = () => {
           >
             Habilidades Técnicas
           </Typography>
-          <Typography
-            sx={{
-              padding: 5,
-              fontSize: 30,
-              backgroundColor: "primero.main",
-              color: "error.main",
-              borderRadius: "10px",
-              boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.5)",
-              height: "90%",
-            }}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            eveniet minus. Unde inventore nesciunt numquam id illo eveniet
-            possimus neque debitis! Error quidem laudantium velit nesciunt
-            adipisci nam similique nobis. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Labore, asperiores? At nostrum vero accusantium
-            similique placeat ut, impedit praesentium eaque ea ipsum ipsa harum
-            suscipit provident eveniet, atque commodi aliquam.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Soluta, eveniet minus. Unde
-            inventore nesciunt numquam id illo eveniet possimus neque debitis!
-            Error quidem laudantium velit nesciunt adipisci nam similique nobis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-            asperiores? At nostrum vero accusantium similique placeat ut,
-            impedit praesentium eaque ea ipsum ipsa harum suscipit provident
-            eveniet, atque commodi aliquam.
-          </Typography>
+          <Grid container>
+            <Typography
+              sx={{
+                padding: 10,
+                fontSize: 30,
+                backgroundColor: "primero.main",
+                color: "error.main",
+                borderRadius: "10px",
+                boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.5)",
+                height: 800,
+                
+              }}
+            >
+              Tengo experiencia solida en el uso de herramientas para programación en JavaScript, Python, HTML y Angular. También poseo fortalezas en el campo administrativo con experiencia en gestión administrativa, matemática, matemática económica, producción documental, servicio al cliente, organización de documentos administrativos, contabilidad y organización de eventos
+            </Typography>
+          </Grid>
         </Grid>
         <Grid
           sx={{
@@ -78,7 +68,9 @@ export const PerfilPage = () => {
             flexDirection: "column",
             justifyContent: "space-around",
             alignItems: "center",
-            marginTop: 5,
+            marginTop: 10,
+            height: 800,
+            
           }}
           item
           lg={2}
@@ -103,12 +95,13 @@ export const PerfilPage = () => {
         </Grid>
         <Grid
           sx={{
-            textAlign: "center",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-around",
             alignItems: "center",
-            marginTop: 5,
+            marginTop: 10,
+          
+            
           }}
           item
           lg={2}
@@ -154,28 +147,28 @@ export const PerfilPage = () => {
           <Typography
             sx={{
               padding: 5,
-              fontSize: 30,
+   
               backgroundColor: "primero.main",
               color: "error.main",
               borderRadius: "10px",
               boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.5)",
-              height: "90%",
+             height: 800,
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            eveniet minus. Unde inventore nesciunt numquam id illo eveniet
-            possimus neque debitis! Error quidem laudantium velit nesciunt
-            adipisci nam similique nobis. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Labore, asperiores? At nostrum vero accusantium
-            similique placeat ut, impedit praesentium eaque ea ipsum ipsa harum
-            suscipit provident eveniet, atque commodi aliquam.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Soluta, eveniet minus. Unde
-            inventore nesciunt numquam id illo eveniet possimus neque debitis!
-            Error quidem laudantium velit nesciunt adipisci nam similique nobis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-            asperiores? At nostrum vero accusantium similique placeat ut,
-            impedit praesentium eaque ea ipsum ipsa harum suscipit provident
-            eveniet, atque commodi aliquam.
+            <Grid sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-around",
+              height: "100%",
+            }} container>
+              <Typography sx={{fontSize: 30 }} >Trabajo en equipo</Typography>
+              <Typography sx={{fontSize: 30 }} >Liderazgo</Typography>
+              <Typography sx={{fontSize: 30 }} >Inteligencia Emocional</Typography>
+              <Typography sx={{fontSize: 30 }} >Solución de conflictos</Typography>
+              <Typography sx={{fontSize: 30 }} >Flexibilidad</Typography>
+              <Typography sx={{fontSize: 30 }} >Gestion de tiempo</Typography>
+            </Grid>
+            
           </Typography>
         </Grid>
       </Grid>

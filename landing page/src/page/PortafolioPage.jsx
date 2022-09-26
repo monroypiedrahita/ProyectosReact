@@ -11,7 +11,7 @@ export const PortafolioPage = () => {
   return (
     <Container
       sx={{
-        paddingTop: 5,
+        paddingTop: 10,
         paddingBottom: 5,
         borderRadius: 5,  
         boxShadow: "-20px -10px 10px rgba(0, 0, 0, 0.5)",

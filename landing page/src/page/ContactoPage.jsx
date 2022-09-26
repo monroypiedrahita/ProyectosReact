@@ -10,7 +10,7 @@ export const ContactoPage = () => {
     <Container
       sx={{
         backgroundColor: "primero.main",
-        borderRadius: 5,
+        borderRadius: 2,
         textAlign: "center",
         paddingBottom: 10,
         paddingTop: 5,
@@ -19,6 +19,7 @@ export const ContactoPage = () => {
       maxWidth="full"
     >
       <Typography
+      component="a"
         sx={{
           color: "tercero.main",
           fontSize: 60,
@@ -53,6 +54,7 @@ export const ContactoPage = () => {
           <GitHubIcon
             sx={{
               marginRight: 1,
+              
             }}
           />{" "}
           GitHub
@@ -73,15 +75,15 @@ export const ContactoPage = () => {
           <LinkedInIcon
             sx={{
               marginRight: 1,
+              color: "white",
             }}
           />{" "}
-          Linkedin
+          <Typography sx={{color: "white"}}>LinkedIn</Typography>
         </Button>
         <Button
           sx={{
             borderRadius: 4,
             backgroundColor: "#00bb2d",
-            color: "White",
             marginX: 2,
             marginY: 2,
           }}
@@ -93,9 +95,11 @@ export const ContactoPage = () => {
           <WhatsAppIcon
             sx={{
               marginRight: 1,
+              color: "white",
             }}
           />{" "}
-          WhatsApp
+          <Typography sx={{color: "white"}}>WhatsApp</Typography>
+          
         </Button>
       </Grid>
     </Container>

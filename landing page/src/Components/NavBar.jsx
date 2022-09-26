@@ -11,10 +11,11 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import CodeIcon from '@mui/icons-material/Code';
+import { Link } from "react-scroll";
 
-const pages = ['Inicio', 'Perfil', 'Estudios', 'Experiencia', 'Portafolio', 'Contacto'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+
 
 export const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,10 +37,15 @@ export const NavBar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed"
+    sx={{
+      backgroundColor: "White",
+        color: "Black"
+        }}
+    >
       <Container maxWidth="full">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <CodeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -48,14 +54,14 @@ export const NavBar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: 'Roboto',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            Juan Miguel
+            Juan M.
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -87,14 +93,35 @@ export const NavBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Link activeClass='active' smooth spy to="Inicio">
+                  <Typography textAlign="center">Inicio</Typography>
+                  </Link>                 
                 </MenuItem>
-              ))}
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Link activeClass='active' smooth spy to="Perfil">
+                  <Typography textAlign="center">Perfil</Typography>
+                  </Link>                 
+                </MenuItem>
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Link activeClass='active' smooth spy to="Experiencia">
+                  <Typography textAlign="center">Experiencia</Typography>
+                  </Link>                 
+                </MenuItem>
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Link activeClass='active' smooth spy to="Portafolio">
+                  <Typography textAlign="center">Inicio</Typography>
+                  </Link>                 
+                </MenuItem>
+                <MenuItem  onClick={handleCloseNavMenu}>
+                  <Link activeClass='active' smooth spy to="Contacto">
+                  <Typography textAlign="center">Contacto</Typography>
+                  </Link>                 
+                </MenuItem>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <CodeIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -114,21 +141,36 @@ export const NavBar = () => {
             PiedraCode
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
+              <Link activeClass='active' smooth spy to="Inicio" >
+                <Typography sx={{marginRight: 2, padding: 2, cursor: 'pointer'}}
+                >Inicio</Typography>
+              </Link>
+              <Link activeClass='active' smooth spy to="Perfil" >
+                <Typography sx={{marginRight: 2, padding: 2, cursor: 'pointer'}}
+                >Perfil</Typography>
+              </Link>
+              <Link activeClass='active' smooth spy to="Estudios" >
+                <Typography sx={{marginRight: 2, padding: 2, cursor: 'pointer'}}
+                >Estudios</Typography>
+              </Link>
+              <Link activeClass='active' smooth spy to="Experiencia" >
+                <Typography sx={{marginRight: 2, padding: 2, cursor: 'pointer'}}
+                >Experiencia</Typography>
+              </Link>
+              <Link activeClass='active' smooth spy to="Portafolio" >
+                <Typography sx={{marginRight: 2, padding: 2, cursor: 'pointer'}}
+                >Portafolio</Typography>
+              </Link>
+              <Link activeClass='active' smooth spy to="Contacto" >
+                <Typography sx={{marginRight: 2, padding: 2, cursor: 'pointer'}}
+                >Contacto</Typography>
+              </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="https://media-exp1.licdn.com/dms/image/C4D03AQHRJKifxfN4ow/profile-displayphoto-shrink_200_200/0/1623386834461?e=1669852800&v=beta&t=Hy3A9n-S3Ggf3IL6ScgnehRbSK1jdQxkgWc5RiWByyA" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -147,11 +189,29 @@ export const NavBar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+           
+                <MenuItem onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">
+                    <a href="https://github.com/monroypiedrahita">
+                    GitHub
+                    </a>
+                    </Typography>
                 </MenuItem>
-              ))}
+                <MenuItem onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">
+                    <a href="https://www.linkedin.com/in/piedramonroy/">
+                    LinkedIn
+                    </a>
+                    </Typography>
+                </MenuItem>
+                <MenuItem onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">
+                    <a href="https://wa.me/573176158612?text=Hola soy un desarrollador Font End">
+                    WhatsApp
+                    </a>
+                    </Typography>
+                </MenuItem>
+             
             </Menu>
           </Box>
         </Toolbar>
